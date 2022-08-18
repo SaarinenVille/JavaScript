@@ -1,0 +1,28 @@
+body
+{
+  background-color: #FFFAF0;
+}
+body
+{
+  margin-left: 200px;
+  margin-top: 25px;
+}
+table
+{
+  border: 3px dotted red;
+}
+th, td
+{
+  border: 1px solid black;
+}
+h1
+{
+  font-family: Copperplate, Papyrus, fantasy;
+  color: #BDB76B;
+  margin-left: 200px;
+  margin-bottom: 50px;
+}
+h3
+{
+  border-top: 2px solid black; width: 692px;
+}
