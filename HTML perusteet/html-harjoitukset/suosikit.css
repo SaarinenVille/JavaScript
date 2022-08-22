@@ -1,0 +1,71 @@
+body {
+  background-color: #329ea8;
+  width: 800px;
+  margin: auto;
+}
+
+h1 {
+  margin-left: 200px;
+  padding: 50px;
+  font-family: papyrus;
+  font-size: 48px;
+
+}
+
+.vasen {
+  float: left;
+}
+
+.oikea {
+  float: right;
+}
+
+h2 {
+  clear: both;
+  padding: 20px;
+}
+
+#ykkönen {
+    background-color: #bcd494;
+    clear: both;
+    height: 250px;
+}
+
+#kakkonen {
+  background-color: #bcd494;
+  clear: both;
+  height: 250px;
+  }
+
+#kolmonen {
+  background-color: #bcd494;
+  clear: both;
+  height: 250px;
+}
+
+#stephen {
+
+  height: 150px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+
+}
+
+#justin {
+
+  height: 150px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#hugh {
+
+  height: 150px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#justinotsikko {
+  margin-left: 615px;
+}
