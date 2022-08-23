@@ -1,0 +1,70 @@
+body {
+margin: 25px;
+}
+h1 {
+  color: green;
+}
+h2{
+  font-family: 'Rubik Dirt', cursive;
+}
+
+p {
+  display: inline;
+}
+
+#nolla {
+  font-size: 8px;
+  color: blue;
+}
+#yksi {
+  font-size: 12px;
+  color: green;
+}
+#kaksi {
+  font-size: 16px;
+  color: red;
+}
+#kolme {
+  font-size: 20px;
+  color: brown;
+}
+#neljä {
+  font-size: 24px;
+  color: orange;
+}
+#viisi {
+  font-size: 22px;
+  color: navy;
+}
+#kuusi {
+  font-size: 18px;
+  color: grey;
+}
+#seitsemän {
+  font-size: 14px;
+  color: purple;
+}
+#kahdeksan {
+  font-size: 10px;
+  color: yellow;
+}
+#yhdeksän {
+  font-size: 6px;
+  color: magenta;
+}
+#what {
+  font-family: 'courier new';
+}
+#why {
+  font-family: 'brush script mt';
+}
+#where1 {
+  font-family: 'trebuchet ms';
+}
+#where2 {
+  font-family: fantasy;
+}
+#where3 {
+  font-family: 'papyrus';
+
+}

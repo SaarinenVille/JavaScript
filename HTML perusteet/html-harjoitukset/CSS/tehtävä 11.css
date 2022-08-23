@@ -1,0 +1,17 @@
+body {
+  width: 950px;
+  margin: auto;
+}
+
+#eka {
+    float: left;
+}
+
+#toka {
+  clear: both;
+  float: right;
+}
+
+img {
+  margin: 10px;
+}
