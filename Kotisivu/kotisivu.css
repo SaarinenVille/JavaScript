@@ -1,41 +1,69 @@
 body {
-  width: 800px;
+  width: 1200px;
   margin: auto;
   background-color: #3E9B97;
-  }
+}
 
 header {
-  color: #2E6E91;
-  background-color: #59CF53;
+  background-color: black;
+  height: 100px;
+  padding-top: 10px;
+}
 
+.inner_header h1 {
+  margin: 10px 0px -20px 110px;
+  width: 400px;
+  color: #2E6E91;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 42px;
+  font-weight: 400;
+}
+
+.inner_header h1 span {
+font-size: 42px;
+font-weight: 400;
 }
 
 nav {
-  width: 400px;
-  margin: auto;
-  background-color: #ACEEA9;
-  border-radius: 3px;
+
+  width: 610px;
+  height: 30px;
+  text-align: center;
+  background-color: #9CDBD9;
+  border-radius: 8px;
+  font-size: 20px;
+  margin-top: 34px;
+}
+.button {
+text-decoration: none;
+font-family: 'Orbitron', sans-serif;
 }
 
 footer {
-  background-color: #59CF53;
-  padding: 1px;
+  background-color: #9CDBD9;
+  height: 30px;
+  border-radius: 10px;
+
+
+}
+#alaviite {
+  margin-left: 200px;
 }
 
 aside {
-  width: 150px;
-  height: 468px;
+  width: 250px;
+  height: 560px;
   float: right;
-  background-color: #4F6CAA;
+  background-color: #456BA7;
 }
 
-header, footer, aside, section {
+footer, aside, section {
   padding: 5px 0px 10px 10px;
 }
 
 section {
-  background-color: #4F6CAA;
-  width: 400px;
+  background-color: #456BA7;
+  width: 600px;
 }
 
 a {
@@ -43,6 +71,8 @@ a {
   color: green;
 }
 
-article {
-  border-radius: 25px;
+hr {
+  background-color: #2E6E91;
+  width: 600px;
+  float: left;
 }

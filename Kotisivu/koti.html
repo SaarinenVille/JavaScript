@@ -3,17 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>Koti</title>
-    <link rel="stylesheet" href="kotisivu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="kotisivu2.css">
   </head>
   <body>
     <header>
-      <h1>Villen kotisivu</h1>
+      <div class="inner_header">
+        <h1>Villen<span> kotisivut</span></h1>
+      </div>
       <nav>
         <p>
-        <a href="koti.html">Koti</a> |
-        <a href="minusta.html">Minusta</a> |
-        <a href="harrastukset.html">Harrastukset</a> |
-        <a href="cv.html">CV</a>
+        <a href="koti.html" class="button">Koti</a> |
+        <a href="minusta.html" class="button">Minusta</a> |
+        <a href="harrastukset.html" class="button">Harrastukset</a> |
+        <a href="cv.html" class="button">CV</a>
         </p>
       </nav>
     </header>
@@ -22,30 +27,41 @@
         <h3>Sivupalkki</h3>
         <p>Tähän tulee sivupalkin tekstit</p>
       </aside>
-      <article class="">
+      <article class="artikkelit">
         <section>
           <h2>Tervetuloa!</h2>
-          <p>Näiltä sivuilta löytyy tietoa minusta, harrastuksistani ja työhistoriastani.</p>
+          <p>Näiltä sivuilta löytyy tietoa minusta, harrastuksistani ja työhistoriastani. <br>
+             Bonuksena hieman nippelitietoa kaiken maailman Villeistä.
+          </p>
         </section>
+        <hr>
         <section>
-          <h2>Otsikko 2</h2>
-          <p>Tähän tulee teksti 2</p>
+          <h2>Tunnettuja Villejä</h2>
+          <ul>
+            <li>Ville Valo, muusikko</li>
+            <li>Ville Niinistö, kansanedustaja ja entinen ministeri (vihreät)</li>
+            <li>Ville Haapasalo, näyttelijä</li>
+            <li>Ville Laihiala, muusikko</li>
+            <li>Ville Peltonen, jääkiekkoilija</li>
+          </ul>
         </section>
-      </article>
+        <hr>
       <section>
-        <h2>Otsikko 3</h2>
-        <p>Tähän tulee teksti 3</p>
+        <h2>Kuvitteellisia Villejä</h2>
+        <ul>
+          <li>Ville Vallaton (engl. Dennis the Menace, sukunimi Mitchell), animaatiohahmo</li>
+          <li>Ville Vaarallinen, hahmo Ankronikka-piirrossarjasta.</li>
+        </ul>
       </section>
+      <hr>
       <section>
-        <h2>Otsikko 3</h2>
-        <p>Tähän tulee teksti 3</p>
+        <h2>Otsikko 4</h2>
+        <p>Tähän tulee teksti 4</p>
       </section>
     </article>
-
-
     </main>
     <footer>
-      <a href="#">Ota yhteyttä</a>
+      <a id="alaviite"href="#">Ota yhteyttä</a>
     </footer>
   </body>
 </html>
