@@ -1,5 +1,5 @@
 body {
-  width: 800px;
+
   margin: auto;
   background-color: #3E9B97;
   }
@@ -13,7 +13,7 @@ header {
 
 nav {
   width: 450px;
-  height: 25px;px;
+  height: 25px;
   margin: auto;
   background-color: #ACEEA9;
   border-radius: 5px;
