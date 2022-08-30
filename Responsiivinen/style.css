@@ -83,7 +83,7 @@ footer > p {
   color: grey;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
 
   body {
   max-width: 300px;
@@ -95,7 +95,6 @@ footer > p {
     width: 300px;
     margin: auto;
   }
-
   .otsikko > h1 {
     font-stretch: extra-condensed;
     font-size: 32px;
@@ -110,7 +109,7 @@ footer > p {
   .article {
     width: 200px;
     margin: 0 auto;
-}
+  }
   .numerot {
     margin-top: 10px;
   }
@@ -128,5 +127,65 @@ footer > p {
   }
   .side_box, .tietoa_meistä, footer {
   display: none;
-    }
   }
+}
+
+@media screen and (max-width: 1000px){
+
+  body {
+  max-width: 450px;
+  }
+  #logo {
+  margin: 25px 0px 0px 0px;
+  }
+  .header {
+    width: 400px;
+    margin: auto;
+  }
+  .otsikko > h1 {
+    font-stretch: extra-condensed;
+    font-size: 32px;
+    width: 500px;
+    margin-left: -90px;
+  }
+  .otsikko > h2 {
+    margin-left: -90px;
+    width: 500px;
+  }
+
+  .article {
+    width: 320px;
+    margin: 0 auto;
+  }
+  .numerot {
+    margin-top: 10px;
+  }
+  .pointti1, .pointti2, .pointti3 {
+    background-color: #F0F0F0;
+    border-radius: 5px;
+    padding-left: 10px;
+    
+  }
+  .pointti1 h2, .pointti2 h2, .pointti3 h2 {
+    font-size: 18px;
+    font-stretch: condensed;
+  }
+  ul {
+   margin-left: -45px;
+  }
+  .tietoa_meistä {
+    background-color: #F0F0F0;
+    border-radius: 5px;
+    padding-left: 10px;
+  }
+  .side_box {
+    position: absolute;
+    bottom: 0px;
+    margin-left: 30px;
+
+  }
+  footer {
+  display: none;
+
+}
+}
