@@ -1,9 +1,5 @@
-html {
+* {
   box-sizing: border-box;
-}
-
-*, *::before, *::after {
-  box-sizing: inherit;
 }
 
 body {
@@ -12,28 +8,24 @@ body {
   font-family: sans-serif;
 }
 
-header {
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
   border-bottom: 4px solid #72B7FA;
 }
 
-#logo {
-  margin-left: 550px;
-  max-width: 100%; height: auto;
+.otsikko {
+text-align: center;
 }
-
-#p_header {
-  margin-left: 665px;
-}
-
-.otsikko > h1  {
-margin-left: 480px;
-margin-top: 15px;
-font-size: 42px;
+.otsikko > h1 {
+  font-size: 42px;
+  margin-left: 400px;
 }
 .otsikko > h2 {
-  margin-left: 475px;
-  margin-top: -25px;
-  font-stretch: condensed;
+  margin-left: 380px;
 }
 .side_box {
   float: right;
@@ -91,31 +83,30 @@ footer > p {
   color: grey;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 500px) {
+
   body {
-  width: 850px;
+  max-width: 300px;
   }
   #logo {
   margin: 25px 0px 0px 0px;
   }
-  header {
+  .header {
     width: 300px;
     margin: auto;
   }
-  #p_header {
-    margin-left: 120px;
-  }
+
   .otsikko > h1 {
     font-stretch: extra-condensed;
     font-size: 32px;
-    width: 700px;
-    margin-left: 440px;
+    width: 400px;
+    margin-left: -90px;
   }
-  .otsikko {
-    width: 800px;
-    margin-left: -500px;
+  .otsikko > h2 {
+    margin-left: -90px;
+    width: 400px;
+  }
 
-  }
   .article {
     width: 200px;
     margin: 0 auto;
@@ -124,7 +115,7 @@ footer > p {
     margin-top: 10px;
   }
   .pointti1, .pointti2, .pointti3 {
-    background-color: lightgrey;
+    background-color: #F0F0F0;
     border-radius: 5px;
     padding-left: 10px;
   }
