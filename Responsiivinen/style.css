@@ -3,7 +3,8 @@
 }
 
 body {
-
+  max-width: 1600px;
+  
   margin: 0 auto;
   font-family: sans-serif;
 }
@@ -83,7 +84,7 @@ footer > p {
   color: grey;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
 
   body {
   width: 350px;
