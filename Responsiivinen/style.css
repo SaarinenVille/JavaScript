@@ -3,7 +3,7 @@
 }
 
 body {
-  width: 1600px;
+
   margin: 0 auto;
   font-family: sans-serif;
 }
@@ -86,7 +86,7 @@ footer > p {
 @media screen and (max-width: 700px) {
 
   body {
-  max-width: 300px;
+  max-width: 500px;
   }
   #logo {
   margin: 25px 0px 0px 0px;
@@ -133,7 +133,7 @@ footer > p {
 @media screen and (max-width: 1000px){
 
   body {
-  max-width: 450px;
+  max-width: 600px;
   }
   #logo {
   margin: 25px 0px 0px 0px;
@@ -164,7 +164,7 @@ footer > p {
     background-color: #F0F0F0;
     border-radius: 5px;
     padding-left: 10px;
-    
+
   }
   .pointti1 h2, .pointti2 h2, .pointti3 h2 {
     font-size: 18px;
@@ -180,8 +180,8 @@ footer > p {
   }
   .side_box {
     position: absolute;
-    bottom: 0px;
-    margin-left: 30px;
+    bottom: -830px;
+    margin-left: 100px;
 
   }
   footer {
