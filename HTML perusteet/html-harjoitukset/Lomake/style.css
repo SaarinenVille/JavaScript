@@ -1,0 +1,29 @@
+
+
+section {
+  width: 350px;
+  margin: auto;
+  background-color: #DEFFB9;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+table {
+
+margin: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+
+
+.text {
+  border-radius: 10px;
+  background-color: lightgrey;
+}
+
+td {
+  padding: 5px;
+}

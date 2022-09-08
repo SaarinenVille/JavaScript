@@ -4,10 +4,10 @@
 
 body {
   max-width: 1600px;
-
   margin: 0 auto;
   font-family: sans-serif;
-}
+  line-height: 1.5em;
+  }
 
 .header {
   display: flex;
@@ -42,6 +42,10 @@ text-align: center;
   background-color: #F0F0F0;
 }
 
+input {
+  width: 50%;
+}
+
 #nimi {
   margin-left: 80px;
 }
@@ -54,7 +58,6 @@ text-align: center;
 #puhnro {
   margin-left: 5px;
 }
-
 
 button {
   float: right;
@@ -72,6 +75,7 @@ button:hover{
   display: inline;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 p{
@@ -132,11 +136,12 @@ footer > p {
    margin-left: -45px;
   }
   .side_box, .tietoa_meistä, footer {
-  display: none;
+  float: none;
+  width: 100%
   }
 }
 
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 1200px){
 
   body {
   max-width: 600px;

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+  </head>
+  <body>
+    <section>
+      <table>
+
+      <form class="lomake" action="index.html" method="post">
+
+        <h1>Lomake</h1>
+        
+        <tr>
+        <td>Etunimi:</td>
+        <td><input class="text" type="text" name="etunimi" value=""></td>
+        </tr>
+
+        <tr>
+        <td>Sukunimi:</td>
+        <td><input class="text" type="text" name="sukunimi" value=""></td>
+        </tr>
+
+        <tr>
+        <td>Käyttäjätunnus:</td>
+        <td><input class="text" type="text" name="ktunnus" value=""></td>
+        </tr>
+
+        <tr>
+          <td>Salasana:</td>
+          <td><input class="text" type="text" name="salasana" value=""></td>
+        </tr>
+
+        <p></p>
+
+        <tr>
+          <td>Sukupuoli:</td>
+          <td>
+            <input type="radio" name="spuoli" value="mies">
+            <label for="mies">Mies</label>
+          <br>
+          <input type="radio" name="spuoli" value="nainen">
+          <label for="spuoli">Nainen</label>
+        </td>
+        </tr>
+
+
+        <p></p>
+
+        <tr>
+          <td><label for="palaute">Palaute</label></td>
+          <td><textarea name="palaute" rows="8" cols="20"></textarea></td>
+        </tr>
+
+
+
+        <p></p>
+
+      <tr>
+        <td><label for="jäsenyystaso">Jäsenyystaso</label></td>
+        <td>
+          <select class="valinta" name="valinta">
+          <option value="valitse">Valitse</option>
+          <option value="taso-1">Taso 1</option>
+          <option value="taso-2">Taso 2</option>
+          <option value="taso-3">taso 3</option></td>
+          </select>
+      </tr>
+
+        <p></p>
+
+        <tr>
+          <td><label for="osaamisalueet">Valitse osaamisalueet</label></td>
+          <td><input class="checkbox" type="checkbox" name="JavaScript" value="JavaScript"> JavaScript
+          <br>
+          <input class="checkbox" type="checkbox" name="css" value="css"> CSS
+          <br>
+          <input class="checkbox" type="checkbox" name="html" value="html"> HTML</td>
+        </tr>
+
+        <br />
+
+        <tr>
+          <td><input class="submit "type="submit" name="lähetä" value="Lähetä"></td>
+          <td><input class="submit" type="submit" name="tyhjennä" value="Tyhjennä"></td>
+        </tr>
+
+
+      </form>
+      </table>
+    </section>
+  </body>
+</html>
