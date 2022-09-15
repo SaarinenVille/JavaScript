@@ -1,4 +1,4 @@
-function esimerkkiTaulukko()
+function esimerkkiTaulukko(/* mahdolliset parametrit*/)
 {
   var autot = [];
   var caarat = ["Tesla", "VW i3", "Hyundai ionic"];
