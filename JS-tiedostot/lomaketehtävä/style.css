@@ -1,0 +1,26 @@
+body {
+  width: 100%;
+  margin: auto;
+}
+
+main {
+  width: 20%;
+  margin: 0 auto;
+  background-color: cornsilk;
+}
+
+.form1  {
+  text-align: center;
+}
+
+fieldset {
+  border: none;
+}
+
+#enimi {
+  margin-left: 11px;
+}
+
+button {
+  margin: 10px;
+}

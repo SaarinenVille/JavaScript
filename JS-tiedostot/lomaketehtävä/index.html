@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="lomake.js" charset="utf-8"></script>
+    <title>Lomaketehtävä</title>
+  </head>
+  <body>
+    <main>
+
+      <form class="form1" action="index.html" method="post">
+        <fieldset>
+          <label for="etunimi" class="labels1">Anna etunimesi </label>
+          <input type="text" id="enimi" value="">
+          <br>
+          <br>
+          <label for="sukunimi" class="labels1">Anna sukunimesi</label>
+          <input type="text" id="snimi" value="">
+        </fieldset>
+      </form>
+
+      <hr>
+
+      <p>Tulin tänään kouluun:</p>
+
+
+        <form class="" action="index.html" method="post">
+          <fieldset>
+            <input type="radio" name="kouluun" value="jalan">
+            <label for="jalan">Jalan</label>
+            <br>
+            <input type="radio" name="kouluun" value="autolla">
+            <label for="jalan">Autolla</label>
+            <br>
+            <input type="radio" name="kouluun" value="junalla">
+            <label for="jalan">Junalla</label>
+            <br>
+            <input type="radio" name="kouluun" value="bussilla">
+            <label for="jalan">Bussilla</label>
+            <br>
+            <input type="radio" name="kouluun" value="mopolla">
+            <label for="jalan">Mopolla</label>
+            <br>
+            <input type="radio" name="kouluun" value="uiden">
+            <label for="jalan">Uiden</label>
+          </fieldset>
+        </form>
+
+        <hr>
+
+        <p>Lempituntini koulussa on:</p>
+        <br>
+
+        <form class="" action="index.html" method="post">
+          <fieldset>
+            <select class="valinta" name="valinta">
+              <option value="vaihtoehto">(Valitse alta oikea vaihtoehto)</option>
+              <option value="vaihtoehto1">Tietotekniikka</option>
+              <option value="vaihtoehto2">Matematiikka</option>
+              <option value="vaihtoehto3">Yhteiskuntaoppi</option>
+              <option value="vaihtoehto4">Äidinkieli</option>
+            </select>
+          </fieldset>
+          <button type="button" name="button" onclick="tulosta">Lähetä</button>
+        </form>
+
+
+
+
+    </main>
+  </body>
+</html>
