@@ -1,7 +1,8 @@
 body {
-  
+
   margin: auto;
-  background-color: #2DA163;
+  width: 100%;
+  background-color: black;
 }
 header {
   background-color: #002E46;
@@ -36,28 +37,33 @@ nav {
   color: green;
 }
 main {
-  border-right: 30px solid #002E46;
-  border-left: 30px solid #002E46;
+
+  border: 30px solid #002E46;
+
 }
 h2 {
-  text-align: center;
+  margin-left: 260px;
+  font-size: 2em;
+}
+h3{
 }
 footer {
+  text-align: center;
   background-color: #002E46;
-  height: 50px;
+  height: 25px;
   border-radius: 0px 0px 30px 30px;
 }
 
 #alaviite {
-  margin-left: 300px;
   color: green;
-  font-size: 22px;
+  font-size: 20px;
+  text-decoration: none;
 }
 aside {
   width: 250px;
   float: right;
   background-color: #2E6E91;
-  border: 1px solid black;
+  border: 2px solid #002E46;
 }
 aside h3 {
   text-align: center;
@@ -67,7 +73,7 @@ footer, aside, section {
 }
 section {
   background-color: #2E6E91;
-  width: 700px;
+
 }
 hr {
   width: 700px;
@@ -96,10 +102,25 @@ hr {
   border: 1px solid black;
 }
 
-.artikkelit p, ul {
+.artikkelit p {
   display: inline-block;
   width: 400px;
   font-size: 18px;
+  margin-left: 25px;
+}
+
+ul {
+  font-size: 18px;
+}
+
+
+
+.artikkelit {
+  max-width: 100%;
+  min-width: 30%;
+  text-align: justify;
+
+
 }
 
 figcaption {

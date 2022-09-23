@@ -7,10 +7,12 @@ main {
   width: 20%;
   margin: 0 auto;
   background-color: cornsilk;
+  border: 2px solid grey;
+  border-radius: 10px;
 }
 
-.form1  {
-  text-align: center;
+p {
+  margin-left: 15px;
 }
 
 fieldset {
@@ -23,4 +25,9 @@ fieldset {
 
 button {
   margin: 10px;
+}
+
+hr {
+  height: 5px;
+
 }

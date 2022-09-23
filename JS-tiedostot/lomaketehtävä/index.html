@@ -9,65 +9,50 @@
   <body>
     <main>
 
-      <form class="form1" action="index.html" method="post">
+      <form class="" action="index.html" method="post">
         <fieldset>
-          <label for="etunimi" class="labels1">Anna etunimesi </label>
+          <label for="etunimi" class="">Anna etunimesi </label>
           <input type="text" id="enimi" value="">
           <br>
           <br>
-          <label for="sukunimi" class="labels1">Anna sukunimesi</label>
+          <label for="sukunimi" class="">Anna sukunimesi</label>
           <input type="text" id="snimi" value="">
         </fieldset>
-      </form>
-
       <hr>
-
       <p>Tulin tänään kouluun:</p>
-
-
-        <form class="" action="index.html" method="post">
           <fieldset>
             <input type="radio" name="kouluun" value="jalan">
             <label for="jalan">Jalan</label>
             <br>
             <input type="radio" name="kouluun" value="autolla">
-            <label for="jalan">Autolla</label>
+            <label for="autolla">Autolla</label>
             <br>
             <input type="radio" name="kouluun" value="junalla">
-            <label for="jalan">Junalla</label>
+            <label for="junalla">Junalla</label>
             <br>
             <input type="radio" name="kouluun" value="bussilla">
-            <label for="jalan">Bussilla</label>
+            <label for="bussilla">Bussilla</label>
             <br>
             <input type="radio" name="kouluun" value="mopolla">
-            <label for="jalan">Mopolla</label>
+            <label for="mopolla">Mopolla</label>
             <br>
             <input type="radio" name="kouluun" value="uiden">
-            <label for="jalan">Uiden</label>
+            <label for="uiden">Uiden</label>
           </fieldset>
-        </form>
-
-        <hr>
-
+              <hr>
         <p>Lempituntini koulussa on:</p>
-        <br>
-
-        <form class="" action="index.html" method="post">
           <fieldset>
-            <select class="valinta" name="valinta">
-              <option value="vaihtoehto">(Valitse alta oikea vaihtoehto)</option>
-              <option value="vaihtoehto1">Tietotekniikka</option>
-              <option value="vaihtoehto2">Matematiikka</option>
-              <option value="vaihtoehto3">Yhteiskuntaoppi</option>
-              <option value="vaihtoehto4">Äidinkieli</option>
+            <select class="valinta" id="aineet" name="aineet">
+              <option value="">(Valitse alta oikea vaihtoehto)</option>
+              <option value="tietotekniikka">Tietotekniikka</option>
+              <option value="matematiikka">Matematiikka</option>
+              <option value="yhteiskuntaoppi">Yhteiskuntaoppi</option>
+              <option value="aidinkieli">Äidinkieli</option>
             </select>
           </fieldset>
-          <button type="button" name="button" onclick="tulosta">Lähetä</button>
+          <button type="button" name="button" onclick="tulosta()">Lähetä</button>
         </form>
-
-
-
-
+        <p id="vastaus"></p>
     </main>
   </body>
 </html>
