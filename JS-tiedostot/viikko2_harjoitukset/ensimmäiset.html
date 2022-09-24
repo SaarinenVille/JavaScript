@@ -50,6 +50,11 @@
         <form class="form" id="kolmas" action="index.html" method="post">
           <h1>Tehtävä 3</h1>
           <p>Ohjelma, joka kertoo, onko antamasi luku parillinen vai pariton</p>
+          <fieldset>
+            <label for="">Anna luku</label>
+            <input type="text" name="lu" id="lu" value="">
+            <button type="button" name="button" onclick="kumpi()">Kumpi</button>
+          </fieldset>
         </form>
       </section>
 
@@ -58,6 +63,11 @@
           <h1>Tehtävä 4</h1>
           <p>Ohjelma, joka kysyy käyttäjän ikää ja tarkistaa, mitä ajoneuvoa saa ajaa: <br>
              <16v - polkupyörää, <18v - mopoa, muutoin autoa</p>
+               <fieldset>
+                 <label for="">Anna käyttäjän ikä</label>
+                 <input type="text" name="" id="age" value="">
+                 <button type="button" name="button" onclick="ajoneuvo()">Näytä ajoneuvo</button>
+               </fieldset>
         </form>
       </section>
 
@@ -66,6 +76,15 @@
           <h1>Tehtävä 5</h1>
           <p>Ohjelma, joka kääntää "Hei maailma" - tekstin valitulle kielelle <br>
              (englanti, ruotsi, espanja)</p>
+             <p>Valitse kieli:</p>
+             <fieldset>
+               <select class="" name="select" id="select">
+                 <option id="eng" value="eng">Englanti</option>
+                 <option id="ruo" value="ruo">Ruotsi</option>
+                 <option id="esp" value="esp">Espanja</option>
+               </select>
+               <button type="button" name="button" onclick="kaanna()">Käännä</button>
+             </fieldset>
         </form>
       </section>
 
