@@ -1,11 +1,12 @@
 body {
   width: 100%;
-  margin-left: auto;
+  margin: auto;
 }
 
-.form {
-  width: 500px;
+form {
+  width: 30%;
   margin: auto;
+  margin-top: 25px;
   background-color: lightgreen;
   border-radius: 10px;
 }
@@ -15,7 +16,11 @@ fieldset {
 }
 
 h1 {
-  width: 500px;
+
   text-align: center;
   margin: auto;
+}
+
+label {
+  width: 105px;
 }
