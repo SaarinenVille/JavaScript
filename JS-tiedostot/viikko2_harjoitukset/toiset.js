@@ -87,8 +87,8 @@ const numero5 = parseInt(document.getElementById('luku_5').value);
 let yht = numero1 + numero2 + numero3 + numero4 + numero5;
 let keskiarvo = yht / 5;
 
-document.write("Lukujen summa on " + yht + ".");
-document.write("Lukujen keskiarvo on " + keskiarvo + ".");
+document.getElementById('form4_vast1').innerHTML = "Lukujen summa on " + yht + ".";
+document.getElementById('form4_vast2').innerHTML = "Lukujen keskiarvo on " + keskiarvo + ".";
 }
 
 // Harjoitus 5
@@ -107,7 +107,7 @@ lause += num + " x 8 = " + num * 8 + "<br>";
 lause += num + " x 9 = " + num * 9 + "<br>";
 lause += num + " x 10 = " + num * 10 + "<br>";
 
-document.getElementById('vastaus').innerHTML = lause;
+document.getElementById('form_5_vast').innerHTML = lause;
 
 
 
