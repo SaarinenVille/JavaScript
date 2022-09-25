@@ -55,7 +55,7 @@ switch (viikonp)
 }
 }
 
-// Harjoitus 3 - Määtittää onko annettu vuosi karkausvuosi
+// Harjoitus 3 - Määrittää onko annettu vuosi karkausvuosi
 function karkausvuosi()
 {
 var vuosiluku = parseInt(document.getElementById('vuosi').value);
@@ -72,6 +72,42 @@ else
 {
   document.write("Vuosi ei ole karkausvuosi");
 }
+}
+
+// Harjoitus 4 - Määrittää lukujen summan ja keskiarvon
+function sum_ka()
+{
+
+const numero1 = parseInt(document.getElementById('luku_1').value);
+const numero2 = parseInt(document.getElementById('luku_2').value);
+const numero3 = parseInt(document.getElementById('luku_3').value);
+const numero4 = parseInt(document.getElementById('luku_4').value);
+const numero5 = parseInt(document.getElementById('luku_5').value);
+
+let yht = numero1 + numero2 + numero3 + numero4 + numero5;
+let keskiarvo = yht / 5;
+
+document.write("Lukujen summa on " + yht + ".");
+document.write("Lukujen keskiarvo on " + keskiarvo + ".");
+}
+
+// Harjoitus 5
+function lausemuuttuja()
+{
+var num = document.getElementById('lu').value;
+var lause;
+lause = num + " x 1 = " + num * 1 + "<br>";
+lause += num + " x 2 = " + num * 2 + "<br>";
+lause += num + " x 3 = " + num * 3 + "<br>";
+lause += num + " x 4 = " + num * 4 + "<br>";
+lause += num + " x 5 = " + num * 5 + "<br>";
+lause += num + " x 6 = " + num * 6 + "<br>";
+lause += num + " x 7 = " + num * 7 + "<br>";
+lause += num + " x 8 = " + num * 8 + "<br>";
+lause += num + " x 9 = " + num * 9 + "<br>";
+lause += num + " x 10 = " + num * 10 + "<br>";
+
+document.getElementById('vastaus').innerHTML = lause;
 
 
 
