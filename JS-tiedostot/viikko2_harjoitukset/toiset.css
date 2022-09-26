@@ -4,7 +4,8 @@ body {
 }
 
 form {
-  width: 30%;
+  text-align: center;
+  width: 22%;
   margin: auto;
   margin-top: 25px;
   background-color: lightgreen;
@@ -13,14 +14,4 @@ form {
 
 fieldset {
   border: none;
-}
-
-h1 {
-
-  text-align: center;
-  margin: auto;
-}
-
-label {
-  width: 105px;
 }

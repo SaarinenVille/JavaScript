@@ -28,7 +28,7 @@ function jarjesta()
       document.write("Luvut pienimmästä suurimpaan: " + luku2 + ", " + luku3 + ", " + luku1);
     }
   }
-  else if(luku3 < luku1 && luku3 < luku3)
+  else if(luku3 < luku1 && luku3 < luku2)
   {
     if(luku1 < luku2)
     {
@@ -36,7 +36,6 @@ function jarjesta()
     }
     else
     {
-
       document.write("Luvut pienimmästä suurimpaan: " + luku3 + ", " + luku2 + ", " + luku1);
     }
     }

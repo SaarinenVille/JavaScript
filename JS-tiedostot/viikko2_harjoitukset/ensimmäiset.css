@@ -3,30 +3,25 @@ body {
   margin: auto;
 }
 
-main {
-
-}
-
-section {
-  margin: auto;
-  display: inline-block;
-  width: 450px;
-  margin: 25px 0 0 40px;
+form {
+  margin: 25px auto;
+  width: 20%;
   border: 1px solid black;
+  border-radius: 10px;
 }
-#section_1 {
+#ensimmainen {
   background-color: orange;
 }
-#section_2 {
+#toinen {
   background-color: lightblue;
 }
-#section_3 {
+#kolmas {
   background-color: lightgreen;
 }
-#section_4 {
+#neljäs {
   background-color: cyan;
 }
-#section_5 {
+#viides {
   background-color: khaki;
 }
 fieldset {
