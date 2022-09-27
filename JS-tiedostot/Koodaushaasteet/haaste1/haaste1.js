@@ -1,3 +1,4 @@
+// Haaste 1
 function pieninSuurin(arr)
 {
   var arr = [10, 50, 25, 70, 20];
@@ -19,7 +20,7 @@ function pieninSuurin(arr)
   document.write("Pienin luku on " + min);
 }
 
-
+// Haaste 2
 function parillinenPariton()
 {
   var numero = document.getElementById('nro').value;
@@ -34,6 +35,7 @@ function parillinenPariton()
   }
 }
 
+// Haaste 3
 function kuukaudet()
 {
   var kuukausi = document.getElementById('kk_nro').value;
@@ -92,9 +94,34 @@ function kuukaudet()
     document.write("Annoit jotain muuta");
     break;
   }
+}
 
 
+// Haaste 4
+
+function Henkilo(etunimi, sukunimi, osoite, pnum, ptp, puh, email)
+{
+  this.etunimi = etunimi;
+  this.sukunimi = sukunimi;
+  this.osoite = osoite;
+  this.postinumero = pnum;
+  this.postitoimipaikka = ptp;
+  this.puhelinnumero = puh;
+  this.email = email;
+  this.tiedot = Nayta;
+}
+
+function Nayta()
+{
+  document.getElementById('tulosta').innerHTML = this.etunimi + " " + this.sukunimi + "<br>" + this.osoite + "<br>" +
+  this.postinumero + " " + this.postitoimipaikka + "<br>" + this.puhelinnumero + "<br>" + this.email;
+}
+
+var Ville = new Henkilo("Ville", "Saarinen", "Keskikatu 3", "04200", "Kerava", "0441234567", "ville.saarinen@edu.keuda.fi");
+var Heikki = new Henkilo("Heikki", "Haikara", "Koodikatu 5", "01300", "Vantaa", "0407654321", "h.haikara@gmail.com");
+var Matti = new Henkilo("Matti", "Meikäläinen", "Matinkatu 10", "001500", "Helsinki", "0501234567", "m.meikalainen@hotmail.com")
 
 
-
+function tiedot() {
+Ville.tiedot()
 }
