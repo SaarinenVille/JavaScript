@@ -99,6 +99,7 @@ function kuukaudet()
 
 // Haaste 4
 
+
 function Henkilo(etunimi, sukunimi, osoite, pnum, ptp, puh, email)
 {
   this.etunimi = etunimi;
@@ -113,6 +114,7 @@ function Henkilo(etunimi, sukunimi, osoite, pnum, ptp, puh, email)
 
 function Nayta()
 {
+
   document.getElementById('tulosta').innerHTML = this.etunimi + " " + this.sukunimi + "<br>" + this.osoite + "<br>" +
   this.postinumero + " " + this.postitoimipaikka + "<br>" + this.puhelinnumero + "<br>" + this.email;
 }
@@ -123,5 +125,25 @@ var Matti = new Henkilo("Matti", "Meikäläinen", "Matinkatu 10", "001500", "Hel
 
 
 function tiedot() {
-Ville.tiedot()
+  var olio = document.getElementById('haku').value;
+  switch (olio) {
+    case "Ville":
+    case "ville":
+    Ville.tiedot();
+    break;
+
+    case "Heikki":
+    case "heikki":
+    Heikki.tiedot();
+    break;
+
+    case "Matti":
+    case "matti":
+    Matti.tiedot();
+    break;
+
+    default:
+    document.getElementById('tulosta').innerHTML = "Tietoa ei löydy";
+    break;
+}
 }
