@@ -1,24 +1,20 @@
 // Haaste 1
 function pieninSuurin(arr)
 {
-  var arr = [10, 50, 25, 70, 20];
-  var max = arr[0];
-  var min = arr[0];
+  var array = [];
+  array[0] = document.getElementById('lu1').value;
+  array[1] = document.getElementById('lu2').value;
+  array[2] = document.getElementById('lu3').value;
+  array[3] = document.getElementById('lu4').value;
+  array[4] = document.getElementById('lu5').value;
 
-  for (var i = 0; i < arr.length; i++) {
-    if (arr[i] >= max) {
-      max = arr[i];
-    }
-  }
-  document.write("Suurin luku on " + max + "<br>");
+  var jarjesta = array.sort();
+  var min = jarjesta.shift();
+  var max = jarjesta.pop();
 
-  for (var i = 0; i < arr.length; i++) {
-    if (arr[i] < min) {
-      min = arr[i];
-    }
-  }
-  document.write("Pienin luku on " + min);
+  document.write("Pienin luku on: " + min + " ja suurin luku on: " + max);
 }
+
 
 // Haaste 2
 function parillinenPariton()
