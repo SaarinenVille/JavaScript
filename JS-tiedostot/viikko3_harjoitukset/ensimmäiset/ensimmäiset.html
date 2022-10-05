@@ -13,43 +13,61 @@
       <h1>Viikko 3 ensimmäiset tehtävät</h1>
       <div class="wrapper">
 
-        <form class="tehtava" action="index.html" method="post">
+        <form class="tehtava" id="tehtava_1" action="index.html" method="post">
           <h2>Tehtävä 1</h2>
           <p>Ohjelma, joka pyytää parillista lukua, jonka jälkeen tulostaa
              kaikki parilliset luvut siihen asti, poislukien 0.</p> <br>
           <label for="">Anna parillinen luku:</label>
-          <input type="text" name="" id="syotto" value=""> <br><br>
+          <input type="text" name="syotto" id="syotto" value=""> <br><br>
           <button type="button" name="button" onclick="parillinen()">Lähetä</button>
           <p id="parilliset"></p>
         </form>
 
-        <form class="tehtava" action="index.html" method="post">
+        <form class="tehtava" id="tehtava_2" action="index.html" method="post">
           <h2>Tehtävä 2</h2>
-
+          <p>Ohjelma muuntaa antamasi sanan salasanaksi lisäämällä Ö-kirjaimen
+             jokaisen syöttämäsi kirjaimen perään</p> <br>
+          <label for="">Syötä sana:</label> <br>
+          <input type="text" id="sana" name="" value=""> <br><br>
+          <button type="button" name="button" onclick="salasanaksi()">Salasanaksi</button>
+          <p id="salasana"></p>
         </form>
 
-        <form class="tehtava" action="index.html" method="post">
+        <form class="tehtava" id="tehtava_3" action="index.html" method="post">
           <h2>Tehtävä 3</h2>
-
+          <p>Ohjelma tarkastaa, onko antamassasi sanassa ö-kirjainta</p> <br>
+          <label for="">Syötä sana:</label> <br>
+          <input type="text" id="t3_syotto" name="" value=""> <br><br>
+          <button type="button" name="button" onclick="onkoKirjainta()">Tarkasta</button>
+          <p id="onko"></p>
         </form>
 
-        <form class="tehtava" action="index.html" method="post">
+        <form class="tehtava" id="tehtava_4" action="index.html" method="post">
           <h2>Tehtävä 4</h2>
+          <p>Ohjelma laskee annetun luvun kertoman</p> <br>
+          <label for="">Syötä luku:</label> <br>
+          <input type="text" id="t4_syotto" name="" value=""> <br><br>
+          <button type="button" name="button" onclick="kertoma()">Suorita</button>
+          <p id="t4_vastaus"></p>
         </form>
 
-        <form class="tehtava" action="index.html" method="post">
+        <form class="tehtava" id="tehtava_5" action="index.html" method="post">
           <h2>Tehtävä 5</h2>
+          <p>Ohjelma tulostaa luvut 1-100 siten, että 3:lla jaolliset tulostetaan
+             hip, viidellä jaolliset heijaa ja viidellä sekä kolmella jaolliset hipheijaa</p> <br>
+          <button type="button" name="button" onclick="hipHeijaa()">Suorita</button> <br>
+          <p id="t5_vastaus"></p>
         </form>
 
-        <form class="tehtava" action="index.html" method="post">
+        <form class="tehtava" id="tehtava_6" action="index.html" method="post">
           <h2>Tehtävä 6</h2>
         </form>
 
-        <form class="tehtava" action="index.html" method="post">
+        <form class="tehtava" id="tehtava_7" action="index.html" method="post">
           <h2>Tehtävä 7</h2>
         </form>
 
-        <form class="tehtava" action="index.html" method="post">
+        <form class="tehtava" id="tehtava_8" action="index.html" method="post">
           <h2>Tehtävä 8</h2>
         </form>
 

@@ -5,13 +5,14 @@ body {
 
 .wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 15px;
 }
 
 form {
   margin: 100px auto;
-  width: 80%;
-  height: 400px;
+  width: 500px;
+  height: 600px;
   background-color: lightgreen;
   border-radius: 10px;
   text-align: center;
@@ -28,6 +29,6 @@ p {
 }
 
 button {
-  width: 75px;
+  width: 100px;
   height: 35px;
 }
