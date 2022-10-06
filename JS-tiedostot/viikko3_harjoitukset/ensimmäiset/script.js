@@ -9,20 +9,21 @@ function parillinen() {
   document.getElementById('parilliset').innerHTML = tulosta;
 }
 
+
 function salasanaksi() {
 
-var sana = document.getElementById('sana').value;
-var salasana = "";
+  var sana = document.getElementById('sana').value;
+  var salasana = "";
 
-for(var j = 0; j < sana.length; j++) {
-  salasana += sana[j] + "Ö";
+  for(var j = 0; j < sana.length; j++) {
+    salasana += sana[j] + "Ö";
+  }
+  salasana += ""
+  document.getElementById('salasana').innerHTML = salasana;
 }
-salasana += ""
-document.getElementById('salasana').innerHTML = salasana;
-}
+
 
 function onkoKirjainta() {
-
   const sana = document.getElementById('t3_syotto').value;
   var vastaus = "Ei ole";
 
@@ -35,8 +36,8 @@ function onkoKirjainta() {
   document.getElementById('onko').innerHTML = vastaus;
 }
 
-function kertoma() {
 
+function kertoma() {
   var numero = parseInt(document.getElementById('t4_syotto').value);
   var vast = 1;
 
@@ -45,6 +46,7 @@ function kertoma() {
   }
   document.getElementById('t4_vastaus').innerHTML = vast;
 }
+
 
 function hipHeijaa() {
   var lukujono = "";
@@ -70,3 +72,79 @@ function hipHeijaa() {
   }
   document.getElementById('t5_vastaus').innerHTML = lukujono;
 }
+
+
+function ensimmaiset() {
+  var numerot = "";
+
+  for (var i = 1; i <= 10; i++) {
+  numerot += i;
+}
+document.getElementById('t6_vastaus').innerHTML = numerot;
+}
+
+
+function laske() {
+  var numerot = 0;
+
+  for (var i = 1; i <= 10; i++) {
+  numerot += i;
+}
+document.getElementById('t7_vastaus').innerHTML = numerot;
+}
+
+
+function laskePotenssi() {
+  var luku1 = parseInt(document.getElementById('t8_syotto1').value);
+  var potenssiLuku = parseInt(document.getElementById('t8_syotto2').value);
+  var yhteensa = luku1;
+
+  for (var i = 1; i < potenssiLuku; i++) {
+    yhteensa *= luku1;
+  }
+  document.getElementById('t8_vastaus').innerHTML = yhteensa;
+}
+
+
+function pieninSuurin() {
+  var luku1 = parseInt(document.getElementById('i1').value);
+  var luku2 = parseInt(document.getElementById('i2').value);
+  var luku3 = parseInt(document.getElementById('i3').value);
+  var luku4 = parseInt(document.getElementById('i4').value);
+  var luku5 = parseInt(document.getElementById('i5').value);
+
+  var largest =  Math.max(luku1,luku2,luku3,luku4,luku5);
+  var smallest = Math.min(luku1,luku2,luku3,luku4,luku5);
+
+  document.getElementById('t9_vastaus').innerHTML = "Pienin luku on " + smallest + " ja suurin luku on " + largest;
+}
+
+
+function randSalasana() {
+
+  var sana = document.getElementById('t10_sana').value;
+  var salasana = "";
+  var alphabet = "abcdefghijklmnopqrstuvwxyzåäö"
+   alphabet[Math.floor(Math.random() * alphabet.length)]
+
+  for(var j = 0; j < sana.length; j++) {
+    salasana += sana[j] + alphabet[Math.floor(Math.random() * alphabet.length)];
+  }
+  salasana += ""
+  document.getElementById('t10_vastaus').innerHTML = salasana;
+}
+
+
+function numerotJaSumma() {
+
+  var pienempi = parseInt(document.getElementById('nro1').value);
+  var suurempi = document.getElementById('nro2').value;
+  var pariton;
+  var parillinen;
+
+  if (pienempi % 2 == 0) {
+    parillinen = pienempi;
+  }
+  else {
+    parillinen = pienempi + 1;
+  }

@@ -4,10 +4,10 @@ function lotto() {
   while (numerot.length < 7) {
   var uusinumero = randomInt(39);
   if (numerot.indexOf(uusinumero) == -1) {
-  numerot.push(uusinumero);
+      numerot.push(uusinumero);
   }
-  document.getElementById('numerot').innerHTML = numerot.toString();
 }
+document.getElementById('numerot').innerHTML = numerot.toString();
 }
 
 function randomInt(max) {

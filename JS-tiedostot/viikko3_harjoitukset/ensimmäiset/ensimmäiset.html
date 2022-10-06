@@ -61,15 +61,68 @@
 
         <form class="tehtava" id="tehtava_6" action="index.html" method="post">
           <h2>Tehtävä 6</h2>
+          <p>Ohjelma tulostaa 10 ensimmäistä numeroa</p> <br>
+          <button type="button" name="button" onclick="ensimmaiset()">Tulosta</button>
+          <p id="t6_vastaus"></p>
         </form>
 
         <form class="tehtava" id="tehtava_7" action="index.html" method="post">
           <h2>Tehtävä 7</h2>
+          <p>Ohjelma laskee 10 ensimmäistä numeroa yhteen</p> <br>
+          <button type="button" name="button" onclick="laske()">Laske</button>
+          <p id="t7_vastaus"></p>
         </form>
 
         <form class="tehtava" id="tehtava_8" action="index.html" method="post">
           <h2>Tehtävä 8</h2>
+          <p>Ohjelma kysyy kahta lukua ja laskee ensimmäisen luvun toisen luvun potenssiin</p> <br>
+          <label for="">Anna korotettava luku:</label> <br>
+          <input type="text" name="" value="" id="t8_syotto1"> <br><br>
+          <label for="">Anna potenssi:</label> <br>
+          <input type="text" name="" value="" id="t8_syotto2"> <br><br>
+          <button type="button" name="button" onclick="laskePotenssi()">Laske</button>
+          <p id="t8_vastaus"></p>
         </form>
+
+        <form class="tehtava" id="tehtava_9" action="index.html" method="post">
+          <h2>Tehtävä 9</h2>
+          <p>Ohjelma, joka etsii annetusta luvuista suurimman ja pienimmän arvon</p> <br>
+          <label for="">Anna luku 1:</label>
+          <input type="text" name="" value="" id="i1"> <br>
+          <label for="">Anna luku 2:</label>
+          <input type="text" name="" value="" id="i2"> <br>
+          <label for="">Anna luku 3:</label>
+          <input type="text" name="" value="" id="i3"> <br>
+          <label for="">Anna luku 4:</label>
+          <input type="text" name="" value="" id="i4"> <br>
+          <label for="">Anna luku 5:</label>
+          <input type="text" name="" value="" id="i5"> <br><br>
+          <button type="button" name="button" onclick="pieninSuurin()">Etsi</button>
+          <p id="t9_vastaus"></p>
+        </form>
+
+        <form class="tehtava" id="tehtava_10" action="index.html" method="post">
+          <h2>Tehtävä 10</h2>
+          <p>Ohjelma arpoo annetun sanan jokaisen merkin väliin kirjaimen</p> <br>
+          <label for="">Anna sana:</label>
+          <input type="text" name="" value="" id="t10_sana"> <br><br>
+          <button type="button" name="button" onclick="randSalasana()">Suorita</button> <br>
+          <p id="t10_vastaus"></p>
+
+        </form>
+
+        <form class="tehtava" id="tehtava_11" action="index.html" method="post">
+          <h2>Tehtävä 11</h2>
+          <p>Ohjelma, joka pyytää käyttäjältä kahta numeroa (jälkimmäisen tulee olla suurempi)
+             ja tulostaa tuolla välillä parilliset ja parittomat numerot sekä niiden summat</p> <br>
+          <label for="">Anna pienempi numero:</label> <br>
+          <input type="text" name="" value="" id="nro1"> <br>
+          <label for="">Anna suurempi numero:</label> <br>
+          <input type="text" name="" value="" id="nro2"> <br><br>
+          <button type="button" name="button" onclick="numerotJaSumma()">Suorita</button>
+          <p id="t11_vastaus"></p>
+        </form>
+
 
       </div>
       </main>
