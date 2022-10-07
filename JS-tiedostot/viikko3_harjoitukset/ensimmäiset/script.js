@@ -138,13 +138,54 @@ function randSalasana() {
 function numerotJaSumma() {
 
   var pienempi = parseInt(document.getElementById('nro1').value);
-  var suurempi = document.getElementById('nro2').value;
-  var pariton;
-  var parillinen;
+  var suurempi = parseInt(document.getElementById('nro2').value);
+  var lukujono = 0;
+  var paritSum = 0;
+  var parilSum = 0;
 
-  if (pienempi % 2 == 0) {
-    parillinen = pienempi;
+
+
+  if (pienempi % 2 != 0) {
+    document.write("Parittomat: ");
+    for (var i = pienempi; i <= suurempi; i += 2) {
+      document.write(i + " ");
+      paritSum += i;
+    }
+      document.write(": ja niiden summa on " + paritSum + "<br>");
+      document.write("Parilliset: ")
+    for (var j = pienempi + 1; j <= suurempi; j += 2) {
+      document.write(j + " ");
+      parilSum += j;
+    }
+      document.write(": ja niiden summa on " + parilSum);
+    }
+
+  else if (pienempi % 2 == 0) {
+    document.write("Parilliset: ");
+    for (var i = pienempi; i <= suurempi; i += 2) {
+      document.write(i + " ");
+      parilSum += i;
+    }
+      document.write(": ja niiden summa on " + parilSum + "<br>");
+      document.write("Parittomat: ")
+    for (var j = pienempi + 1; j <= suurempi; j += 2) {
+      document.write(j + " ");
+      paritSum += j;
+    }
+      document.write(": ja niiden summa on " + paritSum);
+
   }
-  else {
-    parillinen = pienempi + 1;
-  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
