@@ -139,7 +139,6 @@ function numerotJaSumma() {
 
   var pienempi = parseInt(document.getElementById('nro1').value);
   var suurempi = parseInt(document.getElementById('nro2').value);
-  var lukujono = 0;
   var paritSum = 0;
   var parilSum = 0;
 
