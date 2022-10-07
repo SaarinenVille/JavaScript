@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="toiset.css.css">
+    <script type="text/javascript" src="toiset.js">
+
+    </script>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <main>
+      <form class="tehtavat" action="index.html" method="post">
+        <h1>Tehtävä 1</h1>
+        <p>Scrabble-peli. Ohjelma laskee syötetyn sanan kirjaimista pisteet.</p>
+        <ul>
+          <li>A, E, I, N, S, T = 1p</li>
+          <li>O, Ä, K, L = 2p</li>
+          <li>U, M = 3p</li>
+          <li>Y, H, J, P, R, V = 4p</li>
+          <li>Ö, D = 7p</li>
+          <li>B, F, G = 8p</li>
+          <li>C = 10p</li>
+          <li>loput kirjaimet = 12p</li>
+        </ul>
+        <label for="">Anna sana, jonka pisteet lasketaan: </label>
+        <input type="text" name="" value="" id="input">
+        <button type="button" name="button" onclick="scrabble()">Laske pisteet</button>
+        <p id="t1_vastaus"></p>
+      </form>
+
+      <form class="tehtavat" action="index.html" method="post">
+        <h1>Tehtävä 2</h1>
+        <p>Lottoarvonta</p>
+        <button type="button" name="button" onclick="lotto()">Arvo numerot</button>
+        <p id="t2_vastaus"></p>
+      </form>
+
+      <form class="tehtavat" action="index.html" method="post">
+        <h1>Tehtävä 3</h1>
+        <p>Muuntaa 2-ulotteisen taulukon taulukkomuotoon</p>
+      </form>
+
+      <form class="tehtavat" action="index.html" method="post">
+        <h1>Tehtävä 4</h1>
+        <p>Sekoita pakka ja arvo 5 korttia</p>
+      </form>
+    </main>
+  </body>
+</html>
