@@ -1,3 +1,4 @@
+// Ohjelma pisteyttää sanan kirjaimet
 function scrabble() {
 
   var sana = document.getElementById('input').value;
@@ -76,6 +77,7 @@ function scrabble() {
   }
 }
 
+// Ohjelma arpoo 7 numeroa 39:stä numerosta
 function lotto() {
   var numerot = [];
 
@@ -92,6 +94,7 @@ function randomInt(max) {
     return Math.floor((Math.random() * max) + 1);
 }
 
+// Ohjelma järjestää luvut taulukkomuotoon
 function taulukko() {
 
   var luvut = [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]]
