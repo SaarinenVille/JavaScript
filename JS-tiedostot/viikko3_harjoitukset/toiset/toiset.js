@@ -106,3 +106,62 @@ function taulukko() {
   table += '</table>';
   document.getElementById('t3_vastaus').innerHTML = table;
 }
+
+function arvoKortit() {
+
+  var pakka = [""];
+            // pata       risti       ruutu      hertta
+  var maa = ['&#9828;', '&#9827;', '&#9826;', '&#9825;'];
+  var numerot = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
+  laskuri = 0;
+
+  for (var k = 0; k < maa.length; k++) {
+    for(var m = 0; m < numerot.length; m++) {
+      if(k == maa.length - 1 && m == numerot.length - 1) {
+        pakka[laskuri] = maa[k] + numerot[m];
+      }
+      else {
+        pakka[laskuri] = maa[k] + numerot[m];
+        laskuri++;
+      }
+    }
+  }
+  var kortit = [];
+  for(n = 0; n < 5; n++)
+  {
+    temp = pakka[Math.floor(Math.random()*52)];
+    kortit[n] = temp;
+  }
+document.getElementById('t4_vastaus').innerHTML = kortit;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Testi
+function arvoKortit() {
+
+var pakka = [];
+
+while (pakka.length < 5) {
+var uusiKortti = randomInt(13);
+if (pakka.indexOf(uusiKortti) == -1) {
+    pakka.push(uusiKortti);
+  }
+document.getElementById('t4_vastaus').innerHTML = pakka.toString();
+}
+
+function randomInt(max) {
+    return Math.floor((Math.random() * max) + 1);
+}
+}
+*/
