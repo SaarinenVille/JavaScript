@@ -1,3 +1,4 @@
+// Tulostaa parilliset luvut syötettyyn lukuun asti
 function parillinen() {
 
   var luku = parseInt(document.getElementById('syotto').value);
@@ -9,7 +10,7 @@ function parillinen() {
   document.getElementById('parilliset').innerHTML = tulosta;
 }
 
-
+// Lisää Ö-kirjaimen syötetyn sanan kaikkien kirjaimien väliin
 function salasanaksi() {
 
   var sana = document.getElementById('sana').value;
@@ -22,7 +23,7 @@ function salasanaksi() {
   document.getElementById('salasana').innerHTML = salasana;
 }
 
-
+// Tarkastaa, sisältääkö annettu sana Ö-kirjainta
 function onkoKirjainta() {
   const sana = document.getElementById('t3_syotto').value;
   var vastaus = "Ei ole";
@@ -36,7 +37,7 @@ function onkoKirjainta() {
   document.getElementById('onko').innerHTML = vastaus;
 }
 
-
+// Laskee syötetyn numeron kertoman (kertoo kaikilla itseään pienemmillä luvuilla)
 function kertoma() {
   var numero = parseInt(document.getElementById('t4_syotto').value);
   var vast = 1;
@@ -47,7 +48,7 @@ function kertoma() {
   document.getElementById('t4_vastaus').innerHTML = vast;
 }
 
-
+// Tulostaa numerot sataana asti. Kolmella jaolliset tulostetaan hip, viidellä jaolliset heijaa ja 3 sekä 5 jaolliset hipheijaa
 function hipHeijaa() {
   var lukujono = "";
 
@@ -73,7 +74,7 @@ function hipHeijaa() {
   document.getElementById('t5_vastaus').innerHTML = lukujono;
 }
 
-
+// Tulostaa numerot 1-10
 function ensimmaiset() {
   var numerot = "";
 
@@ -83,7 +84,7 @@ function ensimmaiset() {
 document.getElementById('t6_vastaus').innerHTML = numerot;
 }
 
-
+// Laskee lukujen 1-10 summan
 function laske() {
   var numerot = 0;
 
@@ -93,7 +94,7 @@ function laske() {
 document.getElementById('t7_vastaus').innerHTML = numerot;
 }
 
-
+// Laskee ensimmäisen luvun toisen luvun potenssiin
 function laskePotenssi() {
   var luku1 = parseInt(document.getElementById('t8_syotto1').value);
   var potenssiLuku = parseInt(document.getElementById('t8_syotto2').value);
@@ -105,7 +106,7 @@ function laskePotenssi() {
   document.getElementById('t8_vastaus').innerHTML = yhteensa;
 }
 
-
+// Etsii luvuista pienimmän ja suurimman
 function pieninSuurin() {
   var luku1 = parseInt(document.getElementById('i1').value);
   var luku2 = parseInt(document.getElementById('i2').value);
@@ -119,22 +120,20 @@ function pieninSuurin() {
   document.getElementById('t9_vastaus').innerHTML = "Pienin luku on " + smallest + " ja suurin luku on " + largest;
 }
 
-
+// Lisää annetun sanan jokaisen kirjaimen väliin random kirjaimen
 function randSalasana() {
 
   var sana = document.getElementById('t10_sana').value;
   var salasana = "";
   var alphabet = "abcdefghijklmnopqrstuvwxyzåäö"
-   alphabet[Math.floor(Math.random() * alphabet.length)]
 
   for(var j = 0; j < sana.length; j++) {
     salasana += sana[j] + alphabet[Math.floor(Math.random() * alphabet.length)];
   }
-  salasana += ""
   document.getElementById('t10_vastaus').innerHTML = salasana;
 }
 
-
+// Tulostaa parilliset ja parittomat luvut ja niiden summan
 function numerotJaSumma() {
 
   var pienempi = parseInt(document.getElementById('nro1').value);
@@ -150,13 +149,14 @@ function numerotJaSumma() {
       document.write(i + " ");
       paritSum += i;
     }
-      document.write(": ja niiden summa on " + paritSum + "<br>");
-      document.write("Parilliset: ")
+    document.write(": ja niiden summa on " + paritSum + "<br>");
+
+    document.write("Parilliset: ")
     for (var j = pienempi + 1; j <= suurempi; j += 2) {
       document.write(j + " ");
       parilSum += j;
     }
-      document.write(": ja niiden summa on " + parilSum);
+    document.write(": ja niiden summa on " + parilSum);
     }
 
   else if (pienempi % 2 == 0) {
@@ -165,8 +165,9 @@ function numerotJaSumma() {
       document.write(i + " ");
       parilSum += i;
     }
-      document.write(": ja niiden summa on " + parilSum + "<br>");
-      document.write("Parittomat: ")
+    document.write(": ja niiden summa on " + parilSum + "<br>");
+    
+    document.write("Parittomat: ")
     for (var j = pienempi + 1; j <= suurempi; j += 2) {
       document.write(j + " ");
       paritSum += j;
@@ -174,17 +175,4 @@ function numerotJaSumma() {
       document.write(": ja niiden summa on " + paritSum);
 
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

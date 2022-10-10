@@ -91,7 +91,7 @@ document.getElementById('form4_vast1').innerHTML = "Lukujen summa on " + yht + "
 document.getElementById('form4_vast2').innerHTML = "Lukujen keskiarvo on " + keskiarvo + ".";
 }
 
-// Harjoitus 5
+// Harjoitus 5 - Kertotaulu
 function lausemuuttuja()
 {
 var num = document.getElementById('lu').value;
@@ -108,11 +108,4 @@ lause += num + " x 9 = " + num * 9 + "<br>";
 lause += num + " x 10 = " + num * 10 + "<br>";
 
 document.getElementById('form_5_vast').innerHTML = lause;
-
-
-
-
-
-
-
 }
