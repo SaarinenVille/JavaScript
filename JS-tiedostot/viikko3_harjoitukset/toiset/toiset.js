@@ -1,9 +1,10 @@
 // Ohjelma pisteyttää sanan kirjaimet
 function scrabble() {
-
+// Haetaan käyttäjän syöttämä sana muuttujaan geti-komennolla
   var sana = document.getElementById('input').value;
+// Luodaan pisteille oma muuttuja
   var pisteet = 0;
-
+// Määritetään switch casella kirjaimille pistemäärät
   for(var i = 0; i < sana.length; i++) {
     switch (sana[i]) {
       case "a":
@@ -80,7 +81,7 @@ function scrabble() {
 // Ohjelma arpoo 7 numeroa 39:stä numerosta
 function lotto() {
   var numerot = [];
-
+// Käytetään while loopia numeroiden generoimiseen
   while (numerot.length < 7) {
   var uusinumero = randomInt(39);
   if (numerot.indexOf(uusinumero) == -1) {
@@ -89,17 +90,17 @@ function lotto() {
 }
 document.getElementById('t2_vastaus').innerHTML = numerot.toString();
 }
-
+// Määritetään että kahta samaa numeroa ei voi tulostaa
 function randomInt(max) {
     return Math.floor((Math.random() * max) + 1);
 }
 
 // Ohjelma järjestää luvut taulukkomuotoon
 function taulukko() {
-
+// Luodaan muuttujat arraylle sekä taulukolle
   var luvut = [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]]
   var table = '<table border="1">';
-
+// For-loopilla käydään jokainen subarray läpi
   for(var i = 0; i < luvut.length; i++) {
     table += '<tr>';
     for(var j = 0; j < luvut[i].length; j++) {
@@ -110,11 +111,13 @@ function taulukko() {
   document.getElementById('t3_vastaus').innerHTML = table;
 }
 
+// Ohjelma arpoo 5 satunnaista korttia
 function arvoKortit() {
-
+// Luodaan pakalle tyhjä taulukkomuuttuja
   var pakka = [""];
             // pata       risti       ruutu      hertta
   var maa = ['&#9828;', '&#9827;', '&#9826;', '&#9825;'];
+  // NNumeroille oma muuttuja
   var numerot = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
   laskuri = 0;
 
