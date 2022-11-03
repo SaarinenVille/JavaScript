@@ -1,0 +1,12 @@
+[{"My old computer":{
+  "cpu": "core i7 8700",
+  "gpu": "RTX 2070",
+  "mb": "msi gaming pro carbon Z370",
+  "ram": "16GB DDR4 3600Mhz",
+  "ssd": {"m2":"500GB M.2","sata":"1TB SATA SSD"}
+}},
+{"My new computer":{
+  "cpu": "Ryzen 5800X",
+  "gpu": "Radeon Rx 6800 XT",
+  "mb": "MSI MPG Gaming B550"
+}}]

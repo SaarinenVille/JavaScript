@@ -18,3 +18,11 @@ function tiedot() {
     document.getElementById('image_output').src = data.results[0].picture.large
 });
 }
+
+function myDatabase() {
+  fetch("http://127.0.0.1:3000/JS-tiedostot/API/randomPerson/db.json")
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+})
+}
