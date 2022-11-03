@@ -4,7 +4,7 @@ function tiedot() {
   .then(data => {
     console.log(data.results[0]);
 
-    document.getElementById('cell').innerHTML =
+    document.getElementById('person_output').innerHTML =
     "<b>Nimi: </b>" +  data.results[0].name.title + " " + data.results[0].name.first + " " + data.results[0].name.last + "<br>" +
     "<b>Osoite: </b>" +  data.results[0].location.street.number + data.results[0].location.street.name + "<br>" +
                          data.results[0].location.city + " " + data.results[0].location.state + "<br>" +
@@ -19,10 +19,24 @@ function tiedot() {
 });
 }
 
-function myDatabase() {
+function myOldComputer() {
   fetch("http://127.0.0.1:3000/JS-tiedostot/API/randomPerson/db.json")
   .then(response => response.json())
   .then(data => {
-    console.log(data);
+    console.log(data[0]);
+    document.getElementById('old_output').innerHTML =
+    "<h1>My old computer</h1>" + "<br>" +
+    "<b>CPU: </b>" + data[0].myOldComputer.cpu
+})
+}
+
+function myNewComputer() {
+  fetch("http://127.0.0.1:3000/JS-tiedostot/API/randomPerson/db.json")
+  .then(response => response.json())
+  .then(data => {
+    console.log(data[1]);
+    document.getElementById('new_output').innerHTML =
+    "<h1>My old computer</h1>" + "<br>" +
+    "<b>CPU: </b>" + data[1].myNewComputer.cpu
 })
 }

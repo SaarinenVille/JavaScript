@@ -1,12 +1,17 @@
-[{"My old computer":{
+[{"myOldComputer":{
   "cpu": "core i7 8700",
   "gpu": "RTX 2070",
   "mb": "msi gaming pro carbon Z370",
   "ram": "16GB DDR4 3600Mhz",
-  "ssd": {"m2":"500GB M.2","sata":"1TB SATA SSD"}
+  "storage": {"m2":"500GB M.2","sata":"1TB SATA SSD","hdd":"1TB Seasonic"},
+  "case": "Fractal Design Define C"
 }},
-{"My new computer":{
+{"myNewComputer":{
   "cpu": "Ryzen 5800X",
   "gpu": "Radeon Rx 6800 XT",
-  "mb": "MSI MPG Gaming B550"
+  "mb": "MSI MPG Gaming B550",
+  "ram": "16GB DDR4 3600Mhz",
+  "storage": {"m2":"500GB M.2","sata":"1TB SATA SSD","hdd":"1TB Seasonic"},
+  "case": "Lian li 215"
+
 }}]
