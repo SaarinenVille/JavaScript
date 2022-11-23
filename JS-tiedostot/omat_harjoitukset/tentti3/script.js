@@ -98,9 +98,20 @@ console.log(sana.test(lause));
 }
 */
 
+/*
 let lause = "Mantalla on panta päässä ja santaa varpaissa ja kantapäissä ja kädessä rantapallo";
 
 let sana = /[m,p,s]anta/;
 
 console.log(lause.match(sana));
+}
+*/
+
+let Henkilo = {etunimi: "Ville",
+               sukunimi: "Saarinen"};
+
+
+
+               console.log(Henkilo)
+               
 }
