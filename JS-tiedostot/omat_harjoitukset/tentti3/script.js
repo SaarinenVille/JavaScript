@@ -98,9 +98,16 @@ console.log(sana.test(lause));
 }
 */
 
+/*
 let lause = "Mantalla on panta päässä ja santaa varpaissa ja kantapäissä ja kädessä rantapallo";
 
-let sana = /[m,p,s]anta/;
+let sana = /[m,p,s]anta/gi;
 
 console.log(lause.match(sana));
+}
+*/
+
+let lause = "      Heippa maailma     ";
+
+console.log(lause.trim());
 }
