@@ -107,7 +107,17 @@ console.log(lause.match(sana));
 }
 */
 
+<<<<<<< HEAD
 let lause = "      Heippa maailma     ";
 
 console.log(lause.trim());
+=======
+let Henkilo = {etunimi: "Ville",
+               sukunimi: "Saarinen"};
+
+
+
+               console.log(Henkilo)
+               
+>>>>>>> e4694580a4c709630a57739197579e5e8dc4a411
 }
